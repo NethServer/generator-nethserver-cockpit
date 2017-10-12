@@ -40,6 +40,7 @@ module.exports = class extends Generator {
 
     } else {
       // mkdirs
+      mkdirp('app/assets');
       mkdirp('app/scripts');
       mkdirp('app/styles');
 
@@ -50,6 +51,11 @@ module.exports = class extends Generator {
           rawname: this.props.rawname,
           name: this.props.name
         }
+      );
+
+      this.fs.copy(
+        this.templatePath('app/assets/icon.png'),
+        this.destinationPath('app/assets/icon.png')
       );
 
       this.fs.copy(

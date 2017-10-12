@@ -25,6 +25,12 @@ module.exports = function (grunt) {
                 cwd: 'app/',
                 src: ['manifest.json', 'override.json'],
                 dest: 'dist/'
+            },
+            assets: {
+                expand: true,
+                cwd: 'app/assets/',
+                src: ['*'],
+                dest: 'dist/assets/'
             }
         },
         htmlmin: {
@@ -66,6 +72,7 @@ module.exports = function (grunt) {
         'clean:build',
         'copy:html',
         'copy:manifests',
+        'copy:assets',
         'useminPrepare',
         'concat',
         'uglify',
