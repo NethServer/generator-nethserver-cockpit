@@ -2,9 +2,7 @@
   "id": "<%= rawname %>",
   "name": "<%= name %>",
   "summary": "Short description of <%= name %>",
-  "description": [
-    ["Very very very very very long description of <%= name %>"]
-  ],
+  "description": "Very very very very very long description of <%= name %>",
   "screenshots": [{
     "caption": "Login",
     "image": "http://my.screenshot.org/login.png"
@@ -12,7 +10,7 @@
     "caption": "Share data",
     "image": "http://my.screenshot.org/data.png"
   }],
-  "url": "/nextcloud",
+  "url": "<%= rawname %>",
   "homepage": "https://github.com/NethServer/<%= rawname %>",
   "provides": ["<%= rawname %>"],
   "release": {
@@ -31,5 +29,6 @@
     "name": "Author's name of <%= name %>",
     "url": "https://github.com/NethServer/<%= rawname %>",
     "email": "Author's email of <%= name %>"
-  }
+  },
+  "icon": "smile-o"
 }
