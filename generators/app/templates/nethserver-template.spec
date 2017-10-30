@@ -7,7 +7,7 @@ License:        GPLv3
 URL:            %{url_prefix}/%{name}
 Source0:        %{name}-%{version}.tar.gz
 # Execute prep-sources to create Source1
-Source1:        <%= rawname %>-app.tar.gz
+Source1:        <%= rawname %>.tar.gz
 BuildArch:      noarch
 
 BuildRequires:  nethserver-devtools

@@ -14,6 +14,9 @@
     "grunt-docma": "^0.8.0",
     "grunt-processhtml": "^0.4.1",
     "grunt-shell": "^2.1.0",
+    "grunt-xgettext": "^0.3.5",
+    "grunt-po2json": "^0.3.0",
+    "grunt-mustache-render": "^1.9.2",
     "grunt-usemin": "^3.1.1"
   }
 }

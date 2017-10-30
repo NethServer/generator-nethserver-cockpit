@@ -43,6 +43,8 @@ module.exports = class extends Generator {
       mkdirp('app/assets');
       mkdirp('app/scripts');
       mkdirp('app/styles');
+      mkdirp('app/i18n');
+      mkdirp('.tx');
 
       // copy files
       this.fs.copyTpl(
@@ -120,6 +122,18 @@ module.exports = class extends Generator {
       this.fs.copy(
         this.templatePath('prep-sources'),
         this.destinationPath('prep-sources')
+      );
+
+      this.fs.copy(
+        this.templatePath('app/i18n/po.tpl'),
+        this.destinationPath('app/i18n/po.tpl')
+      );
+
+      this.fs.copyTpl(
+        this.templatePath('.tx/config'),
+        this.destinationPath('.tx/config'), {
+          rawname: this.props.rawname
+        }
       );
     }
   }
