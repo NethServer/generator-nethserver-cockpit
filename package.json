@@ -1,6 +1,6 @@
 {
   "name": "generator-nethserver-cockpit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Yeoman generator of Cockpit for NethServer modules",
   "homepage": "https://github.com/edospadoni/generator-nethserver-cockpit#readme",
   "author": "Edoardo Spadoni",
