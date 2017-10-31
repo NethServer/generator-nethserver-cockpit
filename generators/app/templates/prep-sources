@@ -32,11 +32,14 @@ rm -f *.tar.gz
 rm -f *.rpm
 rm -f *.log
 
-# pull new languages strings
-tx pull -a
-
-# copy each pos into project directory
-cp .tx/nethserver.Cockpit-api/* api/i18n/
+# Pull new languages strings if .pot exists.
+# To generate the .pot execute:
+#   grunt lang-extract
+if [ -f app/i18n/en_US.pot ]; then
+    tx pull -a
+    # copy each pos into project directory
+    cp .tx/nethserver.Cockpit-api/* api/i18n/
+fi
 
 # Install dependecies and build UI and API
 npm install && grunt build && grunt lang-compile && grunt release

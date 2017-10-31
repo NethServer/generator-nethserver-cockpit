@@ -2,7 +2,7 @@
   "name": "generator-nethserver-cockpit",
   "version": "1.0.3",
   "description": "A Yeoman generator of Cockpit for NethServer modules",
-  "homepage": "https://github.com/edospadoni/generator-nethserver-cockpit#readme",
+  "homepage": "https://github.com/NethServer/generator-nethserver-cockpit#readme",
   "author": "Edoardo Spadoni",
   "files": [
     "generators"
@@ -29,11 +29,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edospadoni/generator-nethserver-cockpit.git"
+    "url": "git+https://github.com/NethServer/generator-nethserver-cockpit.git"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/edospadoni/generator-nethserver-cockpit/issues"
+    "url": "https://github.com/NethServer/generator-nethserver-cockpit/issues"
   },
   "dependencies": {
     "yeoman-generator": "^1.0.0",
